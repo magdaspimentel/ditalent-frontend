@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="pt">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="description" content="Juntamos Empresas e Talentos Digitais. Encontra os melhores profissionais na área digital.">
+    	<meta name="keywords" content="ditalent, talentos digitais, empresas digitais">
+    	<meta name="author" content="Magda Pimentel">
+    	<meta name="robots" content="index, follow"> 	    
+	    <meta property="og:image" content="images/banners/ditalent-home.jpg">
+	    <meta property="og:image:width" content="2000"> 
+		<meta property="og:image:height" content="1200">
+	    <meta property="og:title" content="DiTalent">
+	    <meta property="og:description" content="Juntamos Empresas e Talentos Digitais. Encontra os melhores profissionais na área digital.">
+		<meta name="twitter:title" content="DiTalent">
+		<meta name="twitter:description" content="Juntamos Empresas e Talentos Digitais. Encontra os melhores profissionais na área digital.">
+		<meta name="twitter:image" content="images/banners/ditalent-home.jpg">
+		<title>Talentos | DiTalent</title>
+		<script src="js/main.js"></script>		       
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" href="images/favicon.png" type="image/png" sizes="32x32">       
+	</head>
+
+	<body>
+
+		<!-- HEADER -->
+		<header id="header">
+			<!-- LOGO -->
+			<div class="logo">
+				<a href="index.html" aria-label="Aceder à Homepage">
+					<img src="images/ditalent-logo.png" alt="Ditalent Logo">
+				</a>
+			</div>				
+
+			<!-- NAV -->
+			<nav class="navbar">
+				<ul>
+					<li>
+						<a href="talentos.html" aria-label="Aceder à página Talentos">Talentos</a>
+					</li>
+					<li>
+						<a href="empresas.html" aria-label="Aceder à página Empresas">Empresas</a>
+					</li>
+				</ul>				
+			</nav>
+
+			<!-- ENTRAR -->
+			<div class="login">
+				<a href="entrar.html" aria-label="Criar Conta">Entrar</a>
+			</div>
+		</header>	
+		<!-- END HEADER -->	
+
+
+		<!-- SOCIAL MEDIA FIXED -->
+		<div class="social-media">
+			<a href="https://pt-pt.facebook.com/" target="_blank" aria-label="Aceder à página do DiTalent no Facebook">
+				<i class="fa fa-facebook-f" aria-hidden="true" title="Facebook"></i>
+			</a>
+			<a href="https://pt.linkedin.com/" target="_blank" aria-label="Aceder à página do DiTalent no LinkedIn">
+				<i class="fa fa-linkedin" aria-hidden="true" title="LinkedIn"></i>
+			</a>
+			<a href="https://twitter.com/?lang=pt_pt" target="_blank" aria-label="Aceder à página do DiTalent no Twitter">
+				<i class="fa fa-twitter" aria-hidden="true" title="Twitter"></i>
+			</a>
+		</div>
+		<!-- END SOCIAL MEDIA FIXED -->
+		
+
+		<!-- MODAL NEWSLETTER -->
+		<div id="newsletterModal">
+			<div class="box-content">
+				<div id="newsletterClose">
+					<button type="button" aria-label="Fechar" title="Fechar">
+						<i class="fa fa-times" aria-hidden="true"></i>
+					</button>
+				</div>	
+				<h1>Subscrever Newsletter</h1>
+				<p>Subscreve a newsletter e recebe informação exclusiva no teu e-mail.</p>
+
+				<form method="post" action="form-newsletter.php">	
+					<div class="box-form">				
+						<label for="name-newsletter">Nome</label>
+						<input type="text" id="name-newsletter" name="name-newsletter" placeholder="Escrever nome" required>
+					</div>
+
+					<div class="box-form">				
+						<label for="email-newsletter">E-mail</label>
+						<input type="email" id="email-newsletter" name="email-newsletter" placeholder="Escrever e-mail" required>
+					</div>	
+
+					<div class="text-right box-send newsletter-button">
+						<button type="submit" name="send">Enviar</button>
+					</div>						
+				</form>
+			</div>		
+		</div>
+		<!-- END MODAL NEWSLETTER -->
+
+
+		<!-- CATEGORIA AND PESQUISAR -->
+		<div class="search-bar top-header">
+			<div class="category">
+				<select name="category" aria-label="Categoria" id="categorySelect">
+					<option value="0">Categoria</option>
+					<option value="1">Account Digital</option>
+					<option value="2">Back-End Development</option>
+					<option value="3">Design Digital</option>
+					<option value="4">Design Multimédia</option>
+					<option value="5">Digital Copywriting</option>
+					<option value="6">Fotografia Digital</option>
+					<option value="7">Front-End Development </option>
+					<option value="8">Game Development</option>
+					<option value="9">Marketing Digital</option>
+					<option value="10">Mobile Development</option>
+					<option value="11">UX/UI Design</option>
+					<option value="12">Social Media Manager</option>
+					<option value="13">Software Development</option>
+					<option value="14">Web Design</option>
+					<option value="15">Web Development</option>
+				</select>
+			</div>				
+
+			<div>
+				<form method="post" action="pesquisar.php">
+					<div class="search">
+						<input type="text" name="search" placeholder="Pesquisar" aria-label="Pesquisar">	
+
+						<div class="search-icon">
+							<button type="submit" name="search-send" aria-label="Efetuar Pesquisa" title="Efetuar Pesquisa">
+								<i class="fa fa-search" aria-hidden="true"></i>
+							</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div> 
+		<!-- END CATEGORIA AND PESQUISAR --> 
+
+
+		<!-- MAIN CONTENT -->
+		<main id="talents" class="container">				
+			<!-- PICTURES -->
+			<!-- SELECT ALL CATEGORY -->
+			<div class="wrap">
+				<div class="wrap-content" data-category="0">
+					<figure>							
+						<img src="images/uploads/talentos/account-digital-1.jpg" alt="Miguel Fonseca">
+						<div>
+							<h1>Miguel Fonseca</h1>
+							<h2>Account Digital</h2>
+						</div>
+						<a href="talento.html" aria-label="Aceder à página de Perfil do Talento"></a>
+					</figure>
+				</div>	
+				<div class="wrap-content" data-category="0">
+					<figure>							
+						<img src="images/uploads/talentos/design-digital-1.jpg" alt="Bruno Santos">
+						<div>
+							<h1>Bruno Santos</h1>
+							<h2>Design Digital</h2>
+						</div>
+						<a href="talento.html" aria-label="Aceder à página de Perfil do Talento"></a>
+					</figure>
+				</div>	
+				<div class="wrap-content" data-category="0">
+					<figure>							
+						<img src="images/uploads/talentos/ux-ui-design-1.jpg" alt="Inês Guimarães">
+						<div>
+							<h1>Inês Guimarães</h1>
+							<h2>UX/UI Design</h2>
+						</div>
+						<a href="talento.html" aria-label="Aceder à página de Perfil do Talento"></a>
+					</figure>
+				</div>
+				<div class="wrap-content" data-category="0">
+					<figure>							
+						<img src="images/uploads/talentos/front-end-development-1.jpg" alt="Gabriel Mendes">
+						<div>
+							<h1>Gabriel Mendes</h1>
+							<h2>Front-End Development</h2>
+						</div>
+						<a href="talento.html" aria-label="Aceder à página de Perfil do Talento"></a>
+					</figure>
+				</div>	
+				<div class="wrap-content" data-category="0">
+					<figure>							
+						<img src="images/uploads/talentos/design-multimedia-1.jpg" alt="Mónica Sousa">
+						<div>
+							<h1>Mónica Sousa</h1>
+							<h2>Design Multimédia</h2>
+						</div>
+						<a href="talento.html" aria-label="Aceder à página de Perfil do Talento"></a>
+					</figure>
+				</div>	
+				<div class="wrap-content" data-category="0">
+					<figure>							
+						<img src="images/uploads/talentos/social-media-manager-3.jpg" alt="Rafael Mendonça">
+						<div>
+							<h1>Rafael Mendonça</h1>
+							<h2>Social Media Manager</h2>
+						</div>
+						<a href="talento.html" aria-label="Aceder à página de Perfil do Talento"></a>
+					</figure>
+				</div>	
+				<div class="wrap-content" data-category="0">
+					<figure>							
+						<img src="images/uploads/talentos/back-end-development-2.jpg" alt="Alexandre Pereira">
+						<div>
+							<h1>Alexandre Pereira</h1>
+							<h2>Back-End Development</h2>
+						</div>
+						<a href="talento.html" aria-label="Aceder à página de Perfil do Talento"></a>
+					</figure>
+				</div>	
+				<div class="wrap-content" data-category="0">
+					<figure>							
+						<img src="images/uploads/talentos/digital-copywriting-2.jpg" alt="Cristina Ribeiro">
+						<div>
+							<h1>Cristina Ribeiro</h1>
+							<h2>Digital Copywriting</h2>
+						</div>
+						<a href="talento.html" aria-label="Aceder à página de Perfil do Talento"></a>
+					</figure>
+				</div>	
+				<div class="wrap-content" data-category="0">
+					<figure>							
+						<img src="images/uploads/talentos/web-design-2.jpg" alt="Filipa Teixeira">
+						<div>
+							<h1>Filipa Teixeira</h1>
+							<h2>Web Design</h2>
+						</div>
+						<a href="talento.html" aria-label="Aceder à página de Perfil do Talento"></a>
+					</figure>
+				</div>
+				<div class="wrap-content" data-category="0">
+					<figure>							
+						<img src="images/uploads/talentos/fotografia-digital-1.jpg" alt="Ricardo Carvalho">
+						<div>
+							<h1>Ricardo Carvalho</h1>
+							<h2>Fotografia Digital</h2>
+						</div>
+						<a href="talento.html" aria-label="Aceder à página de Perfil do Talento"></a>
+					</figure>
+				</div>		
+				<div class="wrap-content" data-category="0">
+					<figure>							
+						<img src="images/uploads/talentos/account-digital-4.jpg" alt="Alberto Correia">
+							<div>
+								<h1>Alberto Correia</h1>
+								<h2>Account Digital</h2>
+							</div>
+						<a href="talento.html" aria-label="Aceder à página de Perfil do Talento"></a>
+					</figure>
+				</div>	
+				<div class="wrap-content" data-category="0">
+					<figure>							
+						<img src="images/uploads/talentos/mobile-development-1.jpg" alt="David Pinheiro">
+						<div>
+							<h1>David Pinheiro</h1>
+							<h2>Mobile Development</h2>
+						</div>
+						<a href="talento.html" aria-label="Aceder à página de Perfil do Talento"></a>
+					</figure>
+				</div>	
+				<div class="wrap-content" data-category="0">
+					<figure>							
+						<img src="images/uploads/talentos/game-development-1.jpg" alt="André Simões">
+						<div>
+							<h1>André Simões</h1>
+							<h2>Game Development</h2>
+						</div>
+						<a href="talento.html" aria-label="Aceder à página de Perfil do Talento"></a>
+					</figure>
+				</div>	
+				<div class="wrap-content" data-category="0">
+					<figure>							
+						<img src="images/uploads/talentos/digital-copywriting-1.jpg" alt="Bárbara Pinho">
+						<div>
+							<h1>Bárbara Pinho</h1>
+							<h2>Digital Copywriting</h2>
+						</div>
+						<a href="talento.html" aria-label="Aceder à página de Perfil do Talento"></a>
+					</figure>
+				</div>	
+				<div class="wrap-content" data-category="0">
+					<figure>							
+						<img src="images/uploads/talentos/ux-ui-design-2.jpg" alt="Pedro Carvalho">
+						<div>
+							<h1>Pedro Carvalhal</h1>
+							<h2>UX/UI Design</h2>
+						</div>
+						<a href="talento.html" aria-label="Aceder à página de Perfil do Talento"></a>
+					</figure>
+				</div>
+				<div class="wrap-content" data-category="0">
+					<figure>							
+						<img src="images/uploads/talentos/account-digital-2.jpg" alt="Eunice Faria">
+						<div>
+							<h1>Eunice Faria</h1>
+							<h2>Account Digital</h2>
+						</div>
+						<a href="talento.html" aria-label="Aceder à página de Perfil do Talento"></a>
+					</figure>
+				</div>					
+			</div>
+			<!-- END SELECT ALL CATEGORY -->
+	
+			<!-- SELECT ONE CATEGORY -->
+			<div class="wrap">
+				<div class="wrap-content hide" data-category="1">
+					<figure>							
+						<img src="images/uploads/talentos/account-digital-1.jpg" alt="Miguel Fonseca">
+						<div>
+							<h1>Miguel Fonseca</h1>
+							<h2>Account Digital</h2>
+						</div>
+						<a href="talento.html" aria-label="Aceder à página de Perfil do Talento"></a>
+					</figure>
+				</div>	
+				<div class="wrap-content hide" data-category="3">
+					<figure>							
+						<img src="images/uploads/talentos/design-digital-1.jpg" alt="Bruno Santos">
+						<div>
+							<h1>Bruno Santos</h1>
+							<h2>Design Digital</h2>
+						</div>
+						<a href="talento.html" aria-label="Aceder à página de Perfil do Talento"></a>
+					</figure>
+				</div>	
+				<div class="wrap-content hide" data-category="11">
+					<figure>							
+						<img src="images/uploads/talentos/ux-ui-design-1.jpg" alt="Inês Guimarães">
+						<div>
+							<h1>Inês Guimarães</h1>
+							<h2>UX/UI Design</h2>
+						</div>
+						<a href="talento.html" aria-label="Aceder à página de Perfil do Talento"></a>
+					</figure>
+				</div>
+				<div class="wrap-content hide" data-category="7">
+					<figure>							
+						<img src="images/uploads/talentos/front-end-development-1.jpg" alt="Gabriel Mendes">
+						<div>
+							<h1>Gabriel Mendes</h1>
+							<h2>Front-End Development</h2>
+						</div>
+						<a href="talento.html" aria-label="Aceder à página de Perfil do Talento"></a>
+					</figure>
+				</div>	
+				<div class="wrap-content hide" data-category="4">
+					<figure>							
+						<img src="images/uploads/talentos/design-multimedia-1.jpg" alt="Mónica Sousa">
+						<div>
+							<h1>Mónica Sousa</h1>
+							<h2>Design Multimédia</h2>
+						</div>
+						<a href="talento.html" aria-label="Aceder à página de Perfil do Talento"></a>
+					</figure>
+				</div>	
+				<div class="wrap-content hide" data-category="12">
+					<figure>							
+						<img src="images/uploads/talentos/social-media-manager-3.jpg" alt="Rafael Mendonça">
+						<div>
+							<h1>Rafael Mendonça</h1>
+							<h2>Social Media Manager</h2>
+						</div>
+						<a href="talento.html" aria-label="Aceder à página de Perfil do Talento"></a>
+					</figure>
+				</div>	
+				<div class="wrap-content hide" data-category="2">
+					<figure>							
+						<img src="images/uploads/talentos/back-end-development-2.jpg" alt="Alexandre Pereira">
+						<div>
+							<h1>Alexandre Pereira</h1>
+							<h2>Back-End Development</h2>
+						</div>
+						<a href="talento.html" aria-label="Aceder à página de Perfil do Talento"></a>
+					</figure>
+				</div>	
+				<div class="wrap-content hide" data-category="5">
+					<figure>							
+						<img src="images/uploads/talentos/digital-copywriting-2.jpg" alt="Cristina Ribeiro">
+						<div>
+							<h1>Cristina Ribeiro</h1>
+							<h2>Digital Copywriting</h2>
+						</div>
+						<a href="talento.html" aria-label="Aceder à página de Perfil do Talento"></a>
+					</figure>
+				</div>	
+				<div class="wrap-content hide" data-category="14">
+					<figure>							
+						<img src="images/uploads/talentos/web-design-2.jpg" alt="Filipa Teixeira">
+						<div>
+							<h1>Filipa Teixeira</h1>
+							<h2>Web Design</h2>
+						</div>
+						<a href="talento.html" aria-label="Aceder à página de Perfil do Talento"></a>
+					</figure>
+				</div>
+				<div class="wrap-content hide" data-category="6">
+					<figure>							
+						<img src="images/uploads/talentos/fotografia-digital-1.jpg" alt="Ricardo Carvalho">
+						<div>
+							<h1>Ricardo Carvalho</h1>
+							<h2>Fotografia Digital</h2>
+						</div>
+						<a href="talento.html" aria-label="Aceder à página de Perfil do Talento"></a>
+					</figure>
+				</div>		
+				<div class="wrap-content hide" data-category="1">
+					<figure>							
+						<img src="images/uploads/talentos/account-digital-4.jpg" alt="Alberto Correia">
+							<div>
+								<h1>Alberto Correia</h1>
+								<h2>Account Digital</h2>
+							</div>
+						<a href="talento.html" aria-label="Aceder à página de Perfil do Talento"></a>
+					</figure>
+				</div>	
+				<div class="wrap-content hide" data-category="10">
+					<figure>							
+						<img src="images/uploads/talentos/mobile-development-1.jpg" alt="David Pinheiro">
+						<div>
+							<h1>David Pinheiro</h1>
+							<h2>Mobile Development</h2>
+						</div>
+						<a href="talento.html" aria-label="Aceder à página de Perfil do Talento"></a>
+					</figure>
+				</div>	
+				<div class="wrap-content hide" data-category="8">
+					<figure>							
+						<img src="images/uploads/talentos/game-development-1.jpg" alt="André Simões">
+						<div>
+							<h1>André Simões</h1>
+							<h2>Game Development</h2>
+						</div>
+						<a href="talento.html" aria-label="Aceder à página de Perfil do Talento"></a>
+					</figure>
+				</div>	
+				<div class="wrap-content hide" data-category="5">
+					<figure>							
+						<img src="images/uploads/talentos/digital-copywriting-1.jpg" alt="Bárbara Pinho">
+						<div>
+							<h1>Bárbara Pinho</h1>
+							<h2>Digital Copywriting</h2>
+						</div>
+						<a href="talento.html" aria-label="Aceder à página de Perfil do Talento"></a>
+					</figure>
+				</div>	
+				<div class="wrap-content hide" data-category="11">
+					<figure>							
+						<img src="images/uploads/talentos/ux-ui-design-2.jpg" alt="Pedro Carvalho">
+						<div>
+							<h1>Pedro Carvalhal</h1>
+							<h2>UX/UI Design</h2>
+						</div>
+						<a href="talento.html" aria-label="Aceder à página de Perfil do Talento"></a>
+					</figure>
+				</div>
+				<div class="wrap-content hide" data-category="1">
+					<figure>							
+						<img src="images/uploads/talentos/account-digital-2.jpg" alt="Eunice Faria">
+						<div>
+							<h1>Eunice Faria</h1>
+							<h2>Account Digital</h2>
+						</div>
+						<a href="talento.html" aria-label="Aceder à página de Perfil do Talento"></a>
+					</figure>
+				</div>					
+				<div class="wrap-content hide" data-category="9">
+					<figure>							
+						<img src="images/uploads/talentos/marketing-digital-3.jpg" alt="Roberto Albuquerque">
+						<div>
+							<h1>Roberto Albuquerque</h1>
+							<h2>Marketing Digital</h2>
+						</div>
+						<a href="talento.html" aria-label="Aceder à página de Perfil do Talento"></a>
+					</figure>
+				</div>
+				<div class="wrap-content hide" data-category="3">
+					<figure>							
+						<img src="images/uploads/talentos/design-digital-2.jpg" alt="Soraia Oliveira">
+						<div>
+							<h1>Soraia Oliveira</h1>
+							<h2>Design Digital</h2>
+						</div>
+						<a href="talento.html" aria-label="Aceder à página de Perfil do Talento"></a>
+					</figure>
+				</div>
+				<div class="wrap-content hide" data-category="13">
+					<figure>							
+						<img src="images/uploads/talentos/software-development-1.jpg" alt="Gonçalo Gusmão">
+						<div>
+							<h1>Gonçalo Gusmão</h1>
+							<h2>Software Development</h2>
+						</div>
+						<a href="talento.html" aria-label="Aceder à página de Perfil do Talento"></a>
+					</figure>
+				</div>
+				<div class="wrap-content hide" data-category="15">
+					<figure>							
+						<img src="images/uploads/talentos/web-development-1.jpg" alt="Sebastião Felipe">
+						<div>
+							<h1>Sebastião Felipe</h1>
+							<h2>Web Development</h2>
+						</div>
+						<a href="talento.html" aria-label="Aceder à página de Perfil do Talento"></a>
+					</figure>
+				</div>	
+				<div class="wrap-content hide" data-category="2">
+					<figure>							
+						<img src="images/uploads/talentos/back-end-development-1.jpg" alt="Rui Cardoso">
+						<div>
+							<h1>Rui Cardoso</h1>
+							<h2>Back-End Development</h2>
+						</div>
+						<a href="talento.html" aria-label="Aceder à página de Perfil do Talento"></a>
+					</figure>
+				</div>	
+				<div class="wrap-content hide" data-category="12">
+					<figure>							
+						<img src="images/uploads/talentos/social-media-manager-1.jpg" alt="Sara Antunes">
+						<div>
+							<h1>Sara Antunes</h1>
+							<h2>Social Media Manager</h2>
+						</div>
+						<a href="talento.html" aria-label="Aceder à página de Perfil do Talento"></a>
+					</figure>
+				</div>	
+				<div class="wrap-content hide" data-category="9">
+					<figure>							
+						<img src="images/uploads/talentos/marketing-digital-1.jpg" alt="Alfredo Jorge">
+						<div>
+							<h1>Alfredo Jorge</h1>
+							<h2>Marketing Digital</h2>
+						</div>
+						<a href="talento.html" aria-label="Aceder à página de Perfil do Talento"></a>
+					</figure>
+				</div>
+				<div class="wrap-content hide" data-category="7">
+					<figure>							
+						<img src="images/uploads/talentos/front-end-development-2.jpg" alt="Joana Silva">
+						<div>
+							<h1>Joana Silva</h1>
+							<h2>Front-End Development</h2>
+						</div>
+						<a href="talento.html" aria-label="Aceder à página de Perfil do Talento"></a>
+					</figure>
+				</div>	
+				<div class="wrap-content hide" data-category="4">
+					<figure>							
+						<img src="images/uploads/talentos/design-multimedia-2.jpg" alt="Jorge Pimenta">
+						<div>
+							<h1>Jorge Pimenta</h1>
+							<h2>Design Multimédia</h2>
+						</div>
+						<a href="talento.html" aria-label="Aceder à página de Perfil do Talento"></a>
+					</figure>
+				</div>
+				<div class="wrap-content hide" data-category="1">
+					<figure>							
+						<img src="images/uploads/talentos/account-digital-3.jpg" alt="Jéssica dos Santos">
+						<div>
+							<h1>Jéssica dos Santos</h1>
+							<h2>Account Digital</h2>
+						</div>
+						<a href="talento.html" aria-label="Aceder à página de Perfil do Talento"></a>
+					</figure>
+				</div>
+				<div class="wrap-content hide" data-category="14">
+					<figure>							
+						<img src="images/uploads/talentos/web-design-1.jpg" alt="Francisco Gonçalves">
+						<div>
+							<h1>Francisco Gonçalves</h1>
+							<h2>Web Design</h2>
+						</div>
+						<a href="talento.html" aria-label="Aceder à página de Perfil do Talento"></a>
+					</figure>
+				</div>
+				<div class="wrap-content hide" data-category="5">
+					<figure>							
+						<img src="images/uploads/talentos/digital-copywriting-3.jpg" alt="Andreia Dinis">
+						<div>
+							<h1>Andreia Dinis</h1>
+							<h2>Digital Copywriting</h2>
+						</div>
+						<a href="talento.html" aria-label="Aceder à página de Perfil do Talento"></a>
+					</figure>
+				</div>		
+				<div class="wrap-content hide" data-category="9">
+					<figure>							
+						<img src="images/uploads/talentos/marketing-digital-2.jpg" alt="Constança Vaz">
+						<div>
+							<h1>Constança Vaz</h1>
+							<h2>Marketing Digital</h2>
+						</div>
+						<a href="talento.html" aria-label="Aceder à página de Perfil do Talento"></a>
+					</figure>
+				</div>
+				<div class="wrap-content hide" data-category="13">
+					<figure>							
+						<img src="images/uploads/talentos/software-development-2.jpg" alt="Tomás Barroso">
+						<div>
+							<h1>Tomás Barroso</h1>
+							<h2>Software Development</h2>
+						</div>
+						<a href="talento.html" aria-label="Aceder à página de Perfil do Talento"></a>
+					</figure>
+				</div>
+				<div class="wrap-content hide" data-category="10">
+					<figure>							
+						<img src="images/uploads/talentos/mobile-development-2.jpg" alt="Diogo Ribas">
+						<div>
+							<h1>Diogo Ribas</h1>
+							<h2>Mobile Development</h2>
+						</div>
+						<a href="talento.html" aria-label="Aceder à página de Perfil do Talento"></a>
+					</figure>
+				</div>
+				<div class="wrap-content hide" data-category="15">
+					<figure>							
+						<img src="images/uploads/talentos/web-development-2.jpg" alt="Carlos Silvestre">
+						<div>
+							<h1>Carlos Silvestre</h1>
+							<h2>Web Development</h2>
+						</div>
+						<a href="talento.html" aria-label="Aceder à página de Perfil do Talento"></a>
+					</figure>
+				</div>
+			</div>
+			<!-- END SELECT ONE CATEGORY -->
+			<!-- END PICTURES -->
+		</main>
+		<!-- END MAIN CONTENT -->
+
+
+		<!-- FOOTER -->
+		<footer>
+			<div>
+				<ul>
+					<li>
+						<a href="sobre.html" aria-label="Aceder à página Sobre">Sobre</a>
+					</li>
+					<li>
+						<a href="registar.html" aria-label="Criar Conta">Registar</a>
+					</li>
+					<li id="newsletterBtn">Newsletter</li>
+					<li>
+						<a href="contactos.html" aria-label="Aceder à página Contactos">Contactos</a>
+					</li>
+				</ul>
+			</div>	
+
+			<div class="social-media-mobile">
+				<a href="https://pt-pt.facebook.com/" target="_blank" aria-label="Aceder à página do DiTalent no Facebook">
+					<i class="fa fa-facebook-f" aria-hidden="true" title="Facebook"></i>
+				</a>
+				<a href="https://pt.linkedin.com/" target="_blank" aria-label="Aceder à página do DiTalent no LinkedIn">
+					<i class="fa fa-linkedin" aria-hidden="true" title="LinkedIn"></i>
+				</a>
+				<a href="https://twitter.com/?lang=pt_pt" target="_blank" aria-label="Aceder à página do DiTalent no Twitter">
+					<i class="fa fa-twitter" aria-hidden="true" title="Twitter"></i>
+				</a>
+			</div>	
+
+			<div class="copyright">
+				<p>© 2019 DiTalent | Design e Programação por 
+					<a href="#" aria-label="Aceder ao website de Magda Pimentel">Magda Pimentel</a>
+				</p>
+			</div>
+		</footer>
+		<!-- END FOOTER -->
+		
+	</body>
+</html>	

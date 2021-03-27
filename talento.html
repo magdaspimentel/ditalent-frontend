@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="description" content="Juntamos Empresas e Talentos Digitais. Encontra os melhores profissionais na área digital.">
+    	<meta name="keywords" content="ditalent, talentos digitais, empresas digitais">
+    	<meta name="author" content="Magda Pimentel">
+    	<meta name="robots" content="index, follow"> 	    
+	    <meta property="og:image" content="images/banners/ditalent-home.jpg">
+	    <meta property="og:image:width" content="2000"> 
+		<meta property="og:image:height" content="1200">
+	    <meta property="og:title" content="DiTalent">
+	    <meta property="og:description" content="Juntamos Empresas e Talentos Digitais. Encontra os melhores profissionais na área digital.">	
+		<meta name="twitter:title" content="DiTalent">
+		<meta name="twitter:description" content="Juntamos Empresas e Talentos Digitais. Encontra os melhores profissionais na área digital.">
+		<meta name="twitter:image" content="images/banners/ditalent-home.jpg">
+		<title>DiTalent</title>
+		<script src="js/main.js"></script>		       
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" href="images/favicon.png" type="image/png" sizes="32x32"> 
+	</head>
+
+	<body>
+
+		<!-- HEADER -->
+		<header id="header">
+			<!-- LOGO -->
+			<div class="logo">
+				<a href="index.html" aria-label="Aceder à Homepage">
+					<img src="images/ditalent-logo.png" alt="Ditalent Logo">
+				</a>
+			</div>				
+
+			<!-- NAV -->
+			<nav class="navbar">
+				<ul>
+					<li>
+						<a href="talentos.html" aria-label="Aceder à página Talentos">Talentos</a>
+					</li>
+					<li>
+						<a href="empresas.html" aria-label="Aceder à página Empresas">Empresas</a>
+					</li>
+				</ul>				
+			</nav>
+
+			<!-- ENTRAR -->
+			<div class="login">
+				<a href="entrar.html" aria-label="Entrar na Conta">Entrar</a>
+			</div>
+		</header>	
+		<!-- END HEADER -->
+
+
+		<!-- MODAL ENVIAR MENSAGEM -->
+		<div id="mensagemModal">
+			<div class="box-content">
+				<div id="mensagemClose">
+					<button type="button" aria-label="Fechar" title="Fechar">
+						<i class="fa fa-times" aria-hidden="true"></i>
+					</button>		
+				</div>	
+				<h1>Enviar Mensagem</h1>
+
+				<form method="post" action="form-enviar-mensagem.php">	
+					<div class="box-form">				
+						<label for="message">Mensagem</label>
+						<textarea id="message" name="message" placeholder="Escrever Mensagem" required></textarea>
+					</div>
+
+					<div class="text-right box-send">
+						<button type="submit" name="send">Enviar</button>
+					</div>						
+				</form>
+			</div>		
+		</div>
+		<!-- END MODAL ENVIAR MENSAGEM -->
+
+		
+		<!-- MODAL NEWSLETTER -->
+		<div id="newsletterModal">
+			<div class="box-content">
+				<div id="newsletterClose">
+					<button type="button" aria-label="Fechar" title="Fechar">
+						<i class="fa fa-times" aria-hidden="true"></i>
+					</button>
+				</div>	
+				<h1>Subscrever Newsletter</h1>
+				<p>Subscreve a newsletter e recebe informação exclusiva no teu e-mail.</p>
+
+				<form method="post" action="form-newsletter.php">	
+					<div class="box-form">				
+						<label for="name-newsletter">Nome</label>
+						<input type="text" id="name-newsletter" name="name-newsletter" placeholder="Escrever nome" required>
+					</div>
+
+					<div class="box-form">				
+						<label for="email-newsletter">E-mail</label>
+						<input type="email" id="email-newsletter" name="email-newsletter" placeholder="Escrever e-mail" required>
+					</div>	
+
+					<div class="text-right box-send newsletter-button">
+						<button type="submit" name="send">Enviar</button>
+					</div>						
+				</form>
+			</div>		
+		</div>
+		<!-- END MODAL NEWSLETTER -->
+
+		
+		<!-- MAIN CONTENT -->
+		<main id="talent" class="container top-header">				
+			<div class="talent-wrap">
+				<!-- CONTENT LEFT -->
+				<div class="talent-left">
+					<div>
+						<img src="images/uploads/talentos/account-digital-1.jpg" alt="Miguel Fonseca">
+					</div>	
+					<div>
+						<h1>Miguel Fonseca</h1>
+						<h2>Account Digital</h2>
+						<p>Lisboa</p>
+						<a href="mailto:miguelfonseca@gmail.com" aria-label="Enviar E-mail">miguelfonseca@gmail.com</a>
+						<a href="https://accountmiguel.com" target="_blank" aria-label="Aceder ao Website">accountmiguel.com</a>
+						<p>Sou um Account com cinco anos de experiência profissional. Licenciado em Ciências da Comunicação pela Universidade Nova de Lisboa, colaborei com várias agências, onde tive a oportunidade de gerir clientes de diferentes áreas.</p>	
+					</div>									
+				</div>
+
+				<!-- CONTENT RIGHT -->
+				<div class="talent-right">
+					<div>
+						<h3>Talentos</h3>
+						<p>Gestão de Clientes, Marketing, Marketing Digital, Microsoft Office, Trabalho em Equipa, Gestão de Projetos</p>
+					</div>	
+
+					<div>
+						<h3>Experiência</h3>
+						<p>Fevereiro 2018 - Presente
+						<br>Account Digital 
+						<br>ABC Digital
+						<br><br>Janeiro 2017 - Janeiro 2018
+						<br>Account Manager 
+						<br>Agência Companhia Global
+						<br><br>Outubro 2015 - Dezembro 2016 
+						<br>Account Júnior
+						<br>FY Solutions   
+						<br><br>Novembro 2014 - Agosto 2015 
+						<br>Account Trainee
+						<br>Think Big
+						<br><br>Fevereiro 2014 - Maio 2014
+						<br>Copywriter Trainee
+						<br>Somos Copy</p>
+					</div>	
+
+					<div>
+						<h3>Formação</h3>
+						<p>2011 - 2014
+						<br>Licenciatura em Ciências da Comunicação
+						<br>Universidade Nova de Lisboa</p> 
+					</div>	
+				</div>							
+			</div>
+
+			<!-- MESSAGE -->
+			<div class="see-more text-right">
+				<button id="mensagemBtn" type="button">Enviar Mensagem</button>
+			</div>	
+		</main>
+		<!-- END MAIN CONTENT -->
+		
+
+		<!-- FOOTER -->
+		<footer>
+			<div>
+				<ul>
+					<li>
+						<a href="sobre.html" aria-label="Aceder à página Sobre">Sobre</a>
+					</li>
+					<li>
+						<a href="registar.html" aria-label="Criar Conta">Registar</a>
+					</li>
+					<li id="newsletterBtn">Newsletter</li>
+					<li>
+						<a href="contactos.html" aria-label="Aceder à página Contactos">Contactos</a>
+					</li>
+				</ul>
+			</div>	
+
+			<div class="social-media-mobile">
+				<a href="https://pt-pt.facebook.com/" target="_blank" aria-label="Aceder à página do DiTalent no Facebook">
+					<i class="fa fa-facebook-f" aria-hidden="true" title="Facebook"></i>
+				</a>
+				<a href="https://pt.linkedin.com/" target="_blank" aria-label="Aceder à página do DiTalent no LinkedIn">
+					<i class="fa fa-linkedin" aria-hidden="true" title="LinkedIn"></i>
+				</a>
+				<a href="https://twitter.com/?lang=pt_pt" target="_blank" aria-label="Aceder à página do DiTalent no Twitter">
+					<i class="fa fa-twitter" aria-hidden="true" title="Twitter"></i>
+				</a>
+			</div>	
+
+			<div class="copyright">
+				<p>© 2019 DiTalent | Design e Programação por 
+					<a href="#" aria-label="Aceder ao website de Magda Pimentel">Magda Pimentel</a>
+				</p>
+			</div>
+		</footer>
+		<!-- END FOOTER -->
+		
+	</body>
+</html>	
